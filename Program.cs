@@ -18,7 +18,8 @@ namespace ExamProgram
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             //string connectionString = "Provider=Microsoft.JET.OLEDB.4.0;data source=C:\\Users\\tumur\\Documents\\Database1.mdb";
-            Application.Run(new MainForm());
+            //Application.Run(new MainForm());
+            Application.Run(new ExamForm());
         }
     }
 }

@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace ExamProgram.Entity
 {
-    class Grouping
+    public class Grouping
     {
         public Int32 groupId;
         public String groupName;

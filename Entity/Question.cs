@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace ExamProgram.Entity
 {
-    class Question
+    public class Question
     {
         public Int32 qid;
         public String question;
