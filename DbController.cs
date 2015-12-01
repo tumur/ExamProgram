@@ -20,13 +20,12 @@ namespace ExamProgram
             {
                 _connection = new OleDbConnection();
                 _connection.ConnectionString = Program.connectionString;
-                //conn.Open();
+                //    _connection.Open();
             }
             catch (Exception ex)
             {
                 MessageBox.Show("Failed to connect to data source," + ex);
             }
-
         }
 
         public static void SetInstance()
@@ -118,7 +117,7 @@ namespace ExamProgram
             {
                 this.OpenConnection();
                 OleDbDataReader reader = null;  // This is OleDb Reader
-                OleDbCommand cmd = new OleDbCommand(" select * from question where groupingID = "+groupId, _connection);
+                OleDbCommand cmd = new OleDbCommand(" select * from question where groupingID = " + groupId, _connection);
                 reader = cmd.ExecuteReader();
                 while (reader.Read())
                 {
@@ -176,6 +175,36 @@ namespace ExamProgram
             return response;
         }
 
+        public List<Grouping> GetGroupsByGeneralID(int GeneralID)
+        {
+            List<Grouping> response = new List<Grouping>();
+            try
+            {
+                this.OpenConnection();
+                OleDbDataReader reader = null;  // This is OleDb Reader
+                OleDbCommand cmd = new OleDbCommand(" select * from grouping where GeneralID=" + GeneralID, _connection);
+                reader = cmd.ExecuteReader();
+                while (reader.Read())
+                {
+                    Grouping g = new Grouping();
+                    g.groupId = Int32.Parse(reader["groupingID"].ToString());
+                    g.groupName = reader["groupingName"].ToString();
+                    g.generalId = Int32.Parse(reader["GeneralID"].ToString());
+                    response.Add(g);
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.ToString());
+                return null;
+            }
+            finally
+            {
+                this.CloseConnection();
+            }
+            return response;
+        }
+
         public List<Grouping> GetGroups()
         {
             List<Grouping> response = new List<Grouping>();
@@ -206,4 +235,5 @@ namespace ExamProgram
             return response;
         }
     }
+
 }
