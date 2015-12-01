@@ -205,6 +205,7 @@ namespace ExamProgram
             return response;
         }
 
+
         public List<Grouping> GetGroups()
         {
             List<Grouping> response = new List<Grouping>();
@@ -213,6 +214,36 @@ namespace ExamProgram
                 this.OpenConnection();
                 OleDbDataReader reader = null;  // This is OleDb Reader
                 OleDbCommand cmd = new OleDbCommand(" select * from grouping ", _connection);
+                reader = cmd.ExecuteReader();
+                while (reader.Read())
+                {
+                    Grouping g = new Grouping();
+                    g.groupId = Int32.Parse(reader["groupingID"].ToString());
+                    g.groupName = reader["groupingName"].ToString();
+                    g.generalId = Int32.Parse(reader["GeneralID"].ToString());
+                    response.Add(g);
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.ToString());
+                return null;
+            }
+            finally
+            {
+                this.CloseConnection();
+            }
+            return response;
+        }
+
+        public List<Grouping> GetGroupByGroupID(int GroupID)
+        {
+            List<Grouping> response = new List<Grouping>();
+            try
+            {
+                this.OpenConnection();
+                OleDbDataReader reader = null;  // This is OleDb Reader
+                OleDbCommand cmd = new OleDbCommand(" select * from grouping where groupingID=" + GroupID, _connection);
                 reader = cmd.ExecuteReader();
                 while (reader.Read())
                 {

@@ -50,13 +50,16 @@ namespace ExamProgram
             navBarGroup2.ItemLinks.Add(items[40]);
 
             List<Grouping> group3 = DbController.GetInstance().GetGroupsByGeneralID(3);
-            items[40] = new NavBarItem((1).ToString() + ": " + group3[0].groupName);
-            navBarGroup3.ItemLinks.Add(items[40]);
+            items[41] = new NavBarItem((1).ToString() + ": " + group3[0].groupName);
+            navBarGroup3.ItemLinks.Add(items[41]);
 
             List<Grouping> group4 = DbController.GetInstance().GetGroupsByGeneralID(4);
-            items[40] = new NavBarItem((1).ToString() + ": " + group4[0].groupName);
-            navBarGroup4.ItemLinks.Add(items[40]);
-            navBarGroup1.Expanded = true;
+            items[42] = new NavBarItem((1).ToString() + ": " + group4[0].groupName);
+            navBarGroup4.ItemLinks.Add(items[42]);
+            navBarGroup1.Expanded = false;
+            navBarGroup2.Expanded = false;
+            navBarGroup3.Expanded = false;
+            navBarGroup4.Expanded = false;
             navBarControl1.EndUpdate();
             navBarControl1.LinkClicked += new NavBarLinkEventHandler(navBarControl1_LinkClicked);
         }
@@ -65,10 +68,12 @@ namespace ExamProgram
         {
             PanelContainer.Controls.Clear();
             char[] chars = e.Link.Caption.ToCharArray();
-            int a = Convert.ToInt32(chars[0].ToString()); // a - ni group id  
+            int a = Convert.ToInt32(chars[0].ToString());   
             List<Question> questions = DbController.GetInstance().GetQuestionsByGroupId(a);
             aa = questions.Count;
-
+             List<Grouping> groupResponse = DbController.GetInstance().GetGroupByGroupID(a);
+             splitContainerControl1.Panel2.Text = groupResponse[0].groupName+": Нийт Асуулт:"+aa.ToString();
+                
             for (int i = aa - 1; i >= 0; i--)
             {
                 UcQuestionRead us = new UcQuestionRead(i + 1, questions[i]);
