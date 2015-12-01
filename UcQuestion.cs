@@ -16,6 +16,7 @@ namespace ExamProgram
     {
         private int qnumber;
         private int rightAnswer;
+        private List<RadioButton> radioButtons = new List<RadioButton>();
 
         public UcQuestion(int qnumber, Question question)
         {
@@ -28,12 +29,20 @@ namespace ExamProgram
             label4.Text = question.answer3;
             label5.Text = question.answer4;
 
+            Random random = new Random();
+            HashSet<int> numbers = new HashSet<int>();
+            while (numbers.Count < 4)
+            {
+                numbers.Add(random.Next(1, 4));
+            }
+
             this.rightAnswer = question.rightAnswer;
 
             this.radioButton1.CheckedChanged += new System.EventHandler(this.AllCheckBoxes_CheckedChanged);
             this.radioButton2.CheckedChanged += new System.EventHandler(this.AllCheckBoxes_CheckedChanged);
             this.radioButton3.CheckedChanged += new System.EventHandler(this.AllCheckBoxes_CheckedChanged);
             this.radioButton4.CheckedChanged += new System.EventHandler(this.AllCheckBoxes_CheckedChanged);
+            
         }
 
         private void UcQuestion_Load(object sender, EventArgs e)
@@ -43,7 +52,7 @@ namespace ExamProgram
 
         private void panelControl1_ClientSizeChanged(object sender, EventArgs e)
         {
-                    }
+        }
 
         private void panelControl1_ClientSizeChanged_1(object sender, EventArgs e)
         {
@@ -54,14 +63,48 @@ namespace ExamProgram
             label5.MaximumSize = new Size((sender as Control).ClientSize.Width - label1.Left - 10, 10000);
         }
 
+        private bool changing = false;
+
         private void AllCheckBoxes_CheckedChanged(Object sender, EventArgs e)
         {
-            if (((RadioButton)sender).Checked)
+            if (!changing)
             {
-                RadioButton rb = (RadioButton)sender;
+                changing = true;
+
+                if (sender == this.radioButton1)
+                {
+                    this.radioButton2.Checked = !this.radioButton1.Checked;
+                    this.radioButton3.Checked = !this.radioButton1.Checked;
+                    this.radioButton4.Checked = !this.radioButton1.Checked;
+                }
+                else if (sender == this.radioButton2)
+                {
+                    this.radioButton1.Checked = !this.radioButton2.Checked;
+                    this.radioButton3.Checked = !this.radioButton2.Checked;
+                    this.radioButton4.Checked = !this.radioButton2.Checked;
+                }
+                else if (sender == this.radioButton3)
+                {
+                    this.radioButton1.Checked = !this.radioButton3.Checked;
+                    this.radioButton2.Checked = !this.radioButton3.Checked;
+                    this.radioButton4.Checked = !this.radioButton3.Checked;
+                }
+                else if (sender == this.radioButton4)
+                {
+                    this.radioButton1.Checked = !this.radioButton4.Checked;
+                    this.radioButton2.Checked = !this.radioButton4.Checked;
+                    this.radioButton3.Checked = !this.radioButton4.Checked;
+                }
+
+                changing = false;
+            }
+            RadioButton rb = (RadioButton)sender;
+            if (rb.Checked)
+            {
+                //RadioButton rb = (RadioButton)sender;
                 //label1.Text = rb.Text;
-                //ExamForm parent = this.ParentForm as ExamForm();
-                //parent.ucRadioButtonChanged(i);
+                ExamForm parent = this.ParentForm as ExamForm;
+                parent.ucRadioButtonChanged(qnumber-1);
                 //ExamForm.Instance.ucRadioButtonChanged(i);
             }
         }
