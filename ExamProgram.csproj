@@ -99,6 +99,12 @@
     <Compile Include="UcQuestion.Designer.cs">
       <DependentUpon>UcQuestion.cs</DependentUpon>
     </Compile>
+    <Compile Include="UcQuestionRead.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UcQuestionRead.Designer.cs">
+      <DependentUpon>UcQuestionRead.cs</DependentUpon>
+    </Compile>
     <Compile Include="UcQuestionTest.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -126,6 +132,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="UcQuestion.resx">
       <DependentUpon>UcQuestion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UcQuestionRead.resx">
+      <DependentUpon>UcQuestionRead.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UcQuestionTest.resx">
       <DependentUpon>UcQuestionTest.cs</DependentUpon>
