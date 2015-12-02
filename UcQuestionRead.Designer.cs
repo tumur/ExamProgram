@@ -50,7 +50,7 @@
             this.panelControl1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panelControl1.Location = new System.Drawing.Point(0, 0);
             this.panelControl1.Name = "panelControl1";
-            this.panelControl1.Size = new System.Drawing.Size(632, 34);
+            this.panelControl1.Size = new System.Drawing.Size(632, 62);
             this.panelControl1.TabIndex = 0;
             this.panelControl1.ClientSizeChanged += new System.EventHandler(this.panelControl1_ClientSizeChanged);
             // 
@@ -61,30 +61,33 @@
             this.panelControl2.Dock = System.Windows.Forms.DockStyle.Top;
             this.panelControl2.Location = new System.Drawing.Point(2, 2);
             this.panelControl2.Name = "panelControl2";
-            this.panelControl2.Size = new System.Drawing.Size(628, 17);
+            this.panelControl2.Size = new System.Drawing.Size(628, 21);
             this.panelControl2.TabIndex = 0;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.Dock = System.Windows.Forms.DockStyle.Top;
+            this.label1.Font = new System.Drawing.Font("Times New Roman", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.Location = new System.Drawing.Point(2, 2);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(35, 13);
+            this.label1.Size = new System.Drawing.Size(47, 17);
             this.label1.TabIndex = 0;
             this.label1.Text = "label1";
             // 
             // panelControl3
             // 
+            this.panelControl3.Appearance.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.panelControl3.Appearance.Options.UseBackColor = true;
             this.panelControl3.AutoSize = true;
             this.panelControl3.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
             this.panelControl3.Controls.Add(this.label2);
             this.panelControl3.Controls.Add(this.radioButton1);
             this.panelControl3.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panelControl3.Location = new System.Drawing.Point(2, 19);
-            this.panelControl3.Margin = new System.Windows.Forms.Padding(10);
+            this.panelControl3.Location = new System.Drawing.Point(2, 23);
+            this.panelControl3.Margin = new System.Windows.Forms.Padding(0);
             this.panelControl3.Name = "panelControl3";
-            this.panelControl3.Size = new System.Drawing.Size(628, 13);
+            this.panelControl3.Size = new System.Drawing.Size(628, 37);
             this.panelControl3.TabIndex = 1;
             // 
             // radioButton1
@@ -94,7 +97,7 @@
             this.radioButton1.Location = new System.Drawing.Point(0, 0);
             this.radioButton1.Name = "radioButton1";
             this.radioButton1.Padding = new System.Windows.Forms.Padding(10);
-            this.radioButton1.Size = new System.Drawing.Size(34, 13);
+            this.radioButton1.Size = new System.Drawing.Size(34, 37);
             this.radioButton1.TabIndex = 0;
             this.radioButton1.TabStop = true;
             this.radioButton1.UseVisualStyleBackColor = true;
@@ -103,9 +106,11 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Dock = System.Windows.Forms.DockStyle.Top;
+            this.label2.Font = new System.Drawing.Font("Times New Roman", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.Location = new System.Drawing.Point(34, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(35, 13);
+            this.label2.Padding = new System.Windows.Forms.Padding(10);
+            this.label2.Size = new System.Drawing.Size(62, 37);
             this.label2.TabIndex = 1;
             this.label2.Text = "label2";
             // 

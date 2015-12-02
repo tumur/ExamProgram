@@ -23,7 +23,8 @@ namespace ExamProgram
             InitializeComponent();
             List<Question> questions = DbController.GetInstance().GetQuestionsByGroupId(1);
             aa = questions.Count;
-            splitContainerControl1.Panel2.Text = "Хуулийн Тест";
+            List<Grouping> groupResponse = DbController.GetInstance().GetGroupByGroupID(1);
+            splitContainerControl1.Panel2.Text = groupResponse[0].groupName + ":                                      Нийт Асуулт:" + aa.ToString();
             for (int i = aa-1; i >= 0; i--)
             {
                 UcQuestionRead us = new UcQuestionRead(i + 1, questions[i]);
@@ -31,11 +32,12 @@ namespace ExamProgram
                 us.AutoSize = true;
                 PanelContainer.Controls.Add(us);
             }
-           
+
         }
 
         private void ReadForm_Load(object sender, EventArgs e)
         {
+        
             items = new NavBarItem[43];
             navBarControl1.BeginUpdate();
             List<Grouping> group1 = DbController.GetInstance().GetGroupsByGeneralID(1);
@@ -44,36 +46,41 @@ namespace ExamProgram
                 items[i] = new NavBarItem((i+1).ToString()+": "+group1[i].groupName);
                 items[i].SmallImageIndex = i;
                 navBarGroup1.ItemLinks.Add(items[i]);   
-            }
-            List<Grouping> group2 = DbController.GetInstance().GetGroupsByGeneralID(2);
-            items[40] = new NavBarItem((1).ToString() + ": " + group2[0].groupName);
-            navBarGroup2.ItemLinks.Add(items[40]);
-
-            List<Grouping> group3 = DbController.GetInstance().GetGroupsByGeneralID(3);
-            items[41] = new NavBarItem((1).ToString() + ": " + group3[0].groupName);
-            navBarGroup3.ItemLinks.Add(items[41]);
-
-            List<Grouping> group4 = DbController.GetInstance().GetGroupsByGeneralID(4);
-            items[42] = new NavBarItem((1).ToString() + ": " + group4[0].groupName);
-            navBarGroup4.ItemLinks.Add(items[42]);
+            }          
             navBarGroup1.Expanded = false;
             navBarGroup2.Expanded = false;
             navBarGroup3.Expanded = false;
             navBarGroup4.Expanded = false;
             navBarControl1.EndUpdate();
             navBarControl1.LinkClicked += new NavBarLinkEventHandler(navBarControl1_LinkClicked);
+               
+            
         }
 
         private void navBarControl1_LinkClicked(object sender, NavBarLinkEventArgs e)
         {
             PanelContainer.Controls.Clear();
+            int a=1;
             char[] chars = e.Link.Caption.ToCharArray();
-            int a = Convert.ToInt32(chars[0].ToString());   
+            if (chars[0] == 'М') { a = 41; }
+            else
+            {
+                if (chars[0] == 'А') { a = 42; }
+                else { if (chars[0] == 'К') { a = 43; } }
+            }
+            if (a < 41)
+            {
+                {
+                    a = Convert.ToInt32(chars[0].ToString());
+                    if (chars[1] > 46 && chars[1] < 58)
+                    { a = a * 10 + Convert.ToInt32(chars[1].ToString()); }
+                }
+            }
             List<Question> questions = DbController.GetInstance().GetQuestionsByGroupId(a);
             aa = questions.Count;
-             List<Grouping> groupResponse = DbController.GetInstance().GetGroupByGroupID(a);
-             splitContainerControl1.Panel2.Text = groupResponse[0].groupName+": Нийт Асуулт:"+aa.ToString();
-                
+            List<Grouping> groupResponse = DbController.GetInstance().GetGroupByGroupID(a);
+            splitContainerControl1.Panel2.Text = groupResponse[0].groupName + ":                                      Нийт Асуулт:" + aa.ToString();
+
             for (int i = aa - 1; i >= 0; i--)
             {
                 UcQuestionRead us = new UcQuestionRead(i + 1, questions[i]);
@@ -81,6 +88,11 @@ namespace ExamProgram
                 us.AutoSize = true;
                 PanelContainer.Controls.Add(us);
             }
+        }
+
+        private void navBarControl1_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

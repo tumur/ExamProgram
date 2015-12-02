@@ -24,9 +24,9 @@ namespace ExamProgram
         {
             InitializeComponent();
 
-            label1.Text = qnumber + ". " + question.question;
+            label1.Text = "АСУУЛТ:"+qnumber + ":\n " + question.question;
             this.qnumber = qnumber;
-            label2.Text = "fds dfhsdkfjsdhfh sdfjdjsjfds hhsdfjsdfhhsdjf sdjfhsdjjf hsdhfjsdhf hsdjf hfsdjfjshd hsdjfh sj"; //question.answer1;
+            label2.Text = question.answer1;
 
         }
 

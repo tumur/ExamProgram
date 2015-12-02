@@ -29,12 +29,12 @@ namespace ExamProgram
             label4.Text = question.answer3;
             label5.Text = question.answer4;
 
-            Random random = new Random();
-            HashSet<int> numbers = new HashSet<int>();
-            while (numbers.Count < 4)
-            {
-                numbers.Add(random.Next(1, 4));
-            }
+            //Random random = new Random();
+            //HashSet<int> numbers = new HashSet<int>();
+            //while (numbers.Count < 4)
+            //{
+            //    numbers.Add(random.Next(1, 4));
+            //}
 
             this.rightAnswer = question.rightAnswer;
 
