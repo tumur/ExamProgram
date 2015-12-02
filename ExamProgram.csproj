@@ -126,6 +126,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <EmbeddedResource Include="ReadForm.resx">
       <DependentUpon>ReadForm.cs</DependentUpon>
@@ -168,6 +169,33 @@
       <ProductName>.NET Framework 3.5 SP1</ProductName>
       <Install>false</Install>
     </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\update_a.png" />
+    <None Include="Resources\read_a.png" />
+    <None Include="Resources\computerIcon.jpg" />
+    <None Include="Resources\exam1.png" />
+    <None Include="Resources\ab1.png" />
+    <None Include="Resources\exam_a.png" />
+    <None Include="Resources\exam_a1.png" />
+    <None Include="Resources\formalLetter_a.png" />
+    <None Include="Resources\computer_a.png" />
+    <Content Include="Resources\law1.jpg" />
+    <None Include="Resources\law1.png" />
+    <Content Include="Resources\law16x16.png" />
+    <None Include="Resources\letterIcon.png" />
+    <None Include="Resources\mongolianIcon.png" />
+    <None Include="Resources\lawIcon.jpg" />
+    <None Include="Resources\law_a.png" />
+    <Content Include="Resources\letter.png" />
+    <Content Include="Resources\letter16x16.png" />
+    <Content Include="Resources\letter32x32.png" />
+    <Content Include="Resources\letter32x321.png" />
+    <None Include="Resources\MockExamIcon.png" />
+    <Content Include="Resources\mongol16x16.png" />
+    <Content Include="Resources\mongolian16x16.png" />
+    <Content Include="Resources\mongolian16x161.png" />
+    <Content Include="Resources\mongolisn175x175.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

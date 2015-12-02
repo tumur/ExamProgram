@@ -28,5 +28,35 @@ namespace ExamProgram
             ReadForm read = new ReadForm();
             read.Show();
         }
+
+        private void simpleButton2_Click_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void MainForm_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pictureEdit2_EditValueChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pictureEdit6_EditValueChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pictureEdit1_EditValueChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void czxc(object sender, EventArgs e)
+        {
+          // pictureEdit6.Image
+        }
     }
 }
