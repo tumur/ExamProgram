@@ -118,20 +118,29 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="update_a" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\update_a.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="mongolian16x161" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\mongolian16x161.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="ab1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\ab1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="exit" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\exit.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="read_a" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\read_a.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="exam_a1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\exam_a1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="law_a" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\law_a.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="law16x16" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\law16x16.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="computerIcon" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\computerIcon.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Letter_a" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Letter_a.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="MockExamIcon" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\MockExamIcon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -142,11 +151,17 @@
   <data name="exam_a" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\exam_a.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="exam1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\exam1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="letter16x16" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\letter16x16.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="exam_a1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\exam_a1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="TAZuvlul" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\TAZuvlul.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="read_a" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\read_a.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="lawIcon" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\lawIcon.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -154,20 +169,20 @@
   <data name="letter32x32" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\letter32x32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="letterIcon" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\letterIcon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="formalLetter_a" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\formalLetter_a.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="law16x16" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\law16x16.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="mongol16x16" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\mongol16x16.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="ab1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ab1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="mongolianIcon" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\mongolianIcon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="computer_a" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\computer_a.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="law1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\law1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -175,13 +190,13 @@
   <data name="mongolian16x16" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\mongolian16x16.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="computer_a" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\computer_a.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="minimize" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\minimize.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="exam1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\exam1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="letterIcon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\letterIcon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="update_a" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\update_a.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="TAZuvlul1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\TAZuvlul1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

@@ -123,6 +123,16 @@ namespace ExamProgram.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap exit {
+            get {
+                object obj = ResourceManager.GetObject("exit", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap formalLetter_a {
             get {
                 object obj = ResourceManager.GetObject("formalLetter_a", resourceCulture);
@@ -173,6 +183,16 @@ namespace ExamProgram.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Letter_a {
+            get {
+                object obj = ResourceManager.GetObject("Letter_a", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap letter16x16 {
             get {
                 object obj = ResourceManager.GetObject("letter16x16", resourceCulture);
@@ -206,6 +226,16 @@ namespace ExamProgram.Properties {
         internal static System.Drawing.Bitmap letterIcon {
             get {
                 object obj = ResourceManager.GetObject("letterIcon", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap minimize {
+            get {
+                object obj = ResourceManager.GetObject("minimize", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -266,6 +296,26 @@ namespace ExamProgram.Properties {
         internal static System.Drawing.Bitmap read_a {
             get {
                 object obj = ResourceManager.GetObject("read_a", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap TAZuvlul {
+            get {
+                object obj = ResourceManager.GetObject("TAZuvlul", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap TAZuvlul1 {
+            get {
+                object obj = ResourceManager.GetObject("TAZuvlul1", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

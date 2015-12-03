@@ -57,6 +57,8 @@
     <Reference Include="DevExpress.XtraNavBar.v13.1, Version=13.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
     <Reference Include="DevExpress.XtraPrinting.v13.1, Version=13.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
     <Reference Include="DevExpress.XtraVerticalGrid.v13.1, Version=13.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="Microsoft.VisualBasic.PowerPacks.Vs, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -171,6 +173,13 @@
     </BootstrapperPackage>
   </ItemGroup>
   <ItemGroup>
+    <None Include="Resources\exit.png" />
+    <Content Include="Resources\Letter_b.png" />
+    <None Include="Resources\minimize.png" />
+    <Content Include="Resources\read_b.png" />
+    <None Include="Resources\TAZuvlul.png" />
+    <None Include="Resources\TAZuvlul1.png" />
+    <Content Include="Resources\update_b.png" />
     <None Include="Resources\update_a.png" />
     <None Include="Resources\read_a.png" />
     <None Include="Resources\computerIcon.jpg" />
@@ -180,6 +189,8 @@
     <None Include="Resources\exam_a1.png" />
     <None Include="Resources\formalLetter_a.png" />
     <None Include="Resources\computer_a.png" />
+    <Content Include="Resources\computer_b.png" />
+    <Content Include="Resources\exam_b.png" />
     <Content Include="Resources\law1.jpg" />
     <None Include="Resources\law1.png" />
     <Content Include="Resources\law16x16.png" />
@@ -187,11 +198,13 @@
     <None Include="Resources\mongolianIcon.png" />
     <None Include="Resources\lawIcon.jpg" />
     <None Include="Resources\law_a.png" />
+    <Content Include="Resources\law_b.png" />
     <Content Include="Resources\letter.png" />
     <Content Include="Resources\letter16x16.png" />
     <Content Include="Resources\letter32x32.png" />
     <Content Include="Resources\letter32x321.png" />
     <None Include="Resources\MockExamIcon.png" />
+    <None Include="Resources\Letter_a.png" />
     <Content Include="Resources\mongol16x16.png" />
     <Content Include="Resources\mongolian16x16.png" />
     <Content Include="Resources\mongolian16x161.png" />
